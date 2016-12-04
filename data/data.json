@@ -1,0 +1,18 @@
+{
+   "data":[
+      {
+         "id":1,
+         "description":"Danie główne gdzieś",
+         "type":0,
+         "price":46,
+         "picUrl":"img/example_food.jpg"
+      },
+      {
+         "id":0,
+         "description":"Przystawka gdzies indziej",
+         "type":1,
+         "price":43,
+         "picUrl":"img/example_food.jpg"
+      }
+   ]
+}

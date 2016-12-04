@@ -1,0 +1,28 @@
+<div class="quiz-box">
+<div class="col-md-12 quiz "  style="background:url({{quizdata.picUrl}}) no-repeat 0px 0px;background-position: center;background-size:cover;" ng-if="quizdata.state===0">
+<div class="col-md-6">
+  <button class="btn btn-primary  pull-left" ng-click="quizdata.answer(0)" style="margin-top:260px">
+  Danie główne
+  </button>
+  </div>
+  <div class="col-md-6">
+  <button class="btn btn-primary  pull-right" ng-click="quizdata.answer(1)" style="margin-top:260px;">
+  Przystawka
+  </button>  
+  </div>
+</div>
+<div class="col-md-12 quiz fade-element-in "  style="background:url({{quizdata.picUrl}}) no-repeat 0px 0px;background-position: center;" ng-if="quizdata.state===1">
+<div ng-switch="quizdata.type==quizdata.useranswer">
+    <div ng-switch-when="true">
+	<i class="fa fa-check fa-3" aria-hidden="true"></i>
+    </div>
+    <div ng-switch-default>
+		<i class="fa fa-times fa-3" aria-hidden="true"></i>
+    </div>
+</div>	
+<p>real value: {{quizdata.type}}</p>
+<p>user value: {{quizdata.useranswer}}</p>
+<p>{{quizdata.description}}</p>
+<p>cena: {{quizdata.price}}</p>
+</div>
+</div>
